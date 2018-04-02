@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/aboutus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradient"
+            android:fontFamily="@font/fff"
+            android:padding="10dp"
+            android:text="@string/about"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="@color/white" />
+
+
+        <TextView
+            android:id="@+id/detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/caviardreams"
+            android:padding="10dp"
+            android:text="@string/detail"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimaryDark" />
+
+        <TextView
+            android:id="@+id/aus_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_home_black_24dp"
+            android:drawableTint="@color/colorPrimaryDark"
+            android:fontFamily="@font/fff"
+            android:text="@string/AustraliaAddress"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <TextView
+            android:id="@+id/addres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/caviardreams"
+            android:padding="10dp"
+            android:text="@string/aus_address"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <TextView
+            android:id="@+id/phn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_local_phone_black_24dp"
+            android:drawableTint="@color/colorPrimaryDark"
+            android:fontFamily="@font/fff"
+            android:text="@string/phone"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/caviardreams"
+            android:padding="10dp"
+            android:paddingLeft="20dp"
+            android:text="@string/phonenum"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <TextView
+            android:id="@+id/Abn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_phone_iphone_black_24dp"
+            android:drawableTint="@color/colorPrimaryDark"
+            android:fontFamily="@font/fff"
+            android:text="@string/ABN"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <TextView
+            android:id="@+id/abnnum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/caviardreams"
+            android:padding="10dp"
+            android:paddingLeft="20dp"
+            android:text="@string/ABN_num"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimaryDark" />
+
+        <TextView
+            android:id="@+id/uk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_home_black_24dp"
+            android:drawableTint="@color/colorPrimaryDark"
+            android:fontFamily="@font/fff"
+            android:text="@string/uk_add"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <TextView
+            android:id="@+id/uk_ad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/caviardreams"
+            android:padding="10dp"
+            android:paddingLeft="20dp"
+            android:text="@string/uk_address"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <TextView
+            android:id="@+id/uk_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_local_phone_black_24dp"
+            android:drawableTint="@color/colorPrimaryDark"
+            android:fontFamily="@font/fff"
+            android:text="@string/phone_uk"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <TextView
+            android:id="@+id/uk_addres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/caviardreams"
+            android:padding="10dp"
+            android:paddingLeft="20dp"
+            android:text="@string/phone_uknum"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <TextView
+            android:id="@+id/toll_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_phone_iphone_black_24dp"
+            android:drawableTint="@color/colorPrimaryDark"
+            android:fontFamily="@font/fff"
+            android:text="@string/tall"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <TextView
+            android:id="@+id/tallfree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/caviardreams"
+            android:padding="10dp"
+            android:paddingLeft="20dp"
+            android:text="@string/tall_free"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <TextView
+            android:id="@+id/mail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:drawableLeft="@drawable/ic_email_black_24dp"
+            android:drawableTint="@color/colorPrimaryDark"
+            android:fontFamily="@font/fff"
+            android:text="Gmail"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <TextView
+            android:id="@+id/link"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:drawableTint="@color/colorPrimaryDark"
+            android:fontFamily="@font/caviardreams"
+            android:padding="10dp"
+            android:paddingLeft="20dp"
+            android:text="@string/address_web"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimaryDark" />
+
+
+        <TextView
+            android:id="@+id/tym"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:fontFamily="@font/caviardreams"
+            android:text="@string/workhours"
+            android:textAlignment="center"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorPrimaryDark" />
+
+
+    </LinearLayout>
+</ScrollView>
