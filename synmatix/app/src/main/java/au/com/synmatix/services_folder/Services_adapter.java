@@ -46,18 +46,61 @@ public class Services_adapter extends RecyclerView.Adapter<Services_adapter.MyVi
     public void onBindViewHolder(MyViewHolder holder, int position) {
         String_services services = list.get(position);
         holder.name.setText(services.getName());
-//        holder.detail.setText(services.ge());
-        int imageresources=context.getResources().getIdentifier(services.getImage(),null,context.getPackageName());
+        setImage(services.getName(),holder);
 
-        Picasso.with(context)
-                .load(imageresources)
-//                .placeholder(R.drawable.ic_business_center_black_24dp)
-                .error(R.drawable.ic_business_center_black_24dp)
-                .into(holder.img_service);
-//        Log.d("services images " , "print my "+services.getImage());
-//        Drawable drawable_res=context.getResources().getDrawable(imageresources);
-//            holder.img_service.setImageDrawable(drawable_res);
 
+    }
+
+    private void setImage(String name, MyViewHolder holder) {
+        if (name.trim().equals("Social Media Marketing")){
+            Picasso.with(context)
+                    .load(R.drawable.digitalmarketing)
+                    .error(R.drawable.banners)
+                    .fit()
+                    .into(holder.img_service);
+        }else if (name.trim().equals("Google Adwords")){
+            Picasso.with(context)
+                    .load(R.drawable.googleadwords)
+                    .error(R.drawable.banners)
+                    .fit()
+                    .into(holder.img_service);
+        }else if (name.trim().equals("Web Design & Development")){
+            Picasso.with(context)
+                    .load(R.drawable.webdevelopment)
+                    .error(R.drawable.banners)
+                    .fit()
+                    .into(holder.img_service);
+        }else if (name.trim().equals("Content Marketing")){
+            Picasso.with(context)
+                    .load(R.drawable.contentmarketing)
+                    .error(R.drawable.banners)
+                    .fit()
+                    .into(holder.img_service);
+        }else if (name.trim().equals("Search Engine Optimisation")){
+            Picasso.with(context)
+                    .load(R.drawable.seo)
+                    .error(R.drawable.banners)
+                    .fit()
+                    .into(holder.img_service);
+        }else if (name.trim().equals("Logo Design")){
+            Picasso.with(context)
+                    .load(R.drawable.logodesign)
+                    .error(R.drawable.banners)
+                    .fit()
+                    .into(holder.img_service);
+        }else if (name.trim().equals("Email Marketing Experts in Melbourne")){
+            Picasso.with(context)
+                    .load(R.drawable.emailmarketing)
+                    .error(R.drawable.banners)
+                    .fit()
+                    .into(holder.img_service);
+        }else {
+            Picasso.with(context)
+                    .load(R.drawable.digitalmarketing)
+                    .error(R.drawable.banners)
+                    .fit()
+                    .into(holder.img_service);
+        }
     }
 
 
@@ -68,7 +111,6 @@ public class Services_adapter extends RecyclerView.Adapter<Services_adapter.MyVi
 
     public class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
         TextView name;
-        TextView detail;
         ImageView img_service;
         Context context;
 
